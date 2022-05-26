@@ -39,14 +39,18 @@ Dockerfile / Bash script if needed for us to run the exercise
 
 Firstly you should to run docker with commands:
 
-**_docker build -t run-ruby-with-gems ._** 
-
-**_docker run -it --rm run-ruby-with-gems_**
-
-**_load './main.rb'_**
+```sh
+docker build -t run-ruby-with-gems .
+docker run -it --rm run-ruby-with-gems
+load './main.rb'
+```
 
 OR you can open file _**main.rb**_ and run it
 
 Answer the questions with: "**Yes**", "**No**", "**Y**", or "**N**".
 
-If you want to clear storage of pstore run _**Storage.store_purge**_ in _**main.rb**_ file
+If you want to clear storage of pstore run 
+```sh
+Storage.store_purge
+```
+in _**main.rb**_ file
